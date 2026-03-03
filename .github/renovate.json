@@ -1,17 +1,11 @@
 {
-  "extends": [
-    "config:recommended",
-    ":automergeAll",
-    "group:allNonMajor",
-    "docker:disable"
-  ],
+  "extends": ["config:recommended", ":automergeAll", "group:allNonMajor"],
   "schedule": ["before 4am on Sunday"],
   "timezone": "Asia/Seoul",
   "suppressNotifications": ["prIgnoreNotification"],
-  "ignorePaths": [],
   "packageRules": [
     {
-      "matchFileNames": ["packages/eslint-config"],
+      "matchDepTypes": ["dependencies"],
       "semanticCommitType": "fix"
     }
   ]
