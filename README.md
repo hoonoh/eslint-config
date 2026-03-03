@@ -70,3 +70,15 @@ export default [
   },
 ];
 ```
+
+## vscode
+
+recommended config
+
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  }
+}
+```
