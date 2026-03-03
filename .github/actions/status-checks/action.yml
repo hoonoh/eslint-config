@@ -1,0 +1,12 @@
+name: Status checks
+
+description: Status checks
+
+runs:
+  using: composite
+
+  steps:
+    - name: Status Checks
+      shell: bash
+      run: |
+        npm run lint
